@@ -1,0 +1,52 @@
+.udeCover {
+    background-image: url(../img/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    .udeCover__content {
+        position: absolute;
+        top: 34%;
+        left: 15%;
+        width: 25%;
+        h1 {
+            @include styleText($color-white-0, $fs-4, $fw-bold);
+        }
+        p {
+            @include styleText($color-white-0, $fs-2 - 2, $fw-normal);
+        }
+        .udeCover__input {
+            .input-group {
+                .input-group-prepend {
+                    color: $color-red-0;
+                    font-size: $fs-3;
+                    align-items: center;
+                    background-color: $color-white-0;
+                    width: 38px;
+                    &:hover{
+                        background-color: $color-red-0;
+                        color: $color-white-0;
+                        padding-left: 2px;
+                        cursor: pointer;
+                    }
+                    span{
+                        padding: 3px 4px 3px;
+                        
+                    }
+                  
+                }
+                input::placeholder {
+                    font-size: $fs-2;
+                }
+                .form-control{
+                    border: none;
+                    &:focus{
+                        border-color: $color-white-0;
+                        box-shadow: none
+                    }
+                }
+            }
+        }
+    }
+}

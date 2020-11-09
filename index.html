@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Udemy</title>
+   <!-- FONT GOOGLE -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+   <!-- FONT AWESOME -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+   <!-- BS4 -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+   <link rel="stylesheet" href="./css/owl.carousel.min.css">
+   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   <!-- header -->
+   <header class="container-fluid myNavBar">
+      <nav class="navbar navbar-expand-lg">
+         <div class="col-2 col-sm-2 d-md-none">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-search"></i>
+         </div>
+         <div class="col-9 col-sm-9 col-md-8 col-lg-9 col-xl-6">
+            <div class="header__left">
+               <a class="navbar-brand" href="#">
+                  <img src="./img/logo-coral.svg" alt="" />
+               </a>
+               <span class="header__categories">
+                  <i class="fa fa-th"></i>
+                  Categories
+               </span>
+               <form class="header__form">
+                  <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search for anything"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                     <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="col-1 col-sm-1 col-md-4 col-lg-3 col-xl-6">
+            <div class="header__right">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item business">
+                     <a class="nav-link" href="#"> Udemy for business </a>
+                  </li>
+                  <li class="nav-item teach">
+                     <a class="nav-link" href="#"> Teach on Udemy </a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                        <i class="fa fa-shopping-cart"></i>
+                     </a>
+                  </li>
+                  <li class="nav-item ude-btnGroup">
+                     <div class="button">
+                        <button class="btn ude-btnWhite mr-1">Log In</button>
+                        <button class="btn ude-btnRed">Sign Up</button>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!-- cover -->
+   <section class="udeCover">
+      <div class="udeCover__content">
+         <h1>Learn on your schedule</h1>
+         <p>Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
+         <div class="udeCover__input">
+            <div class="input-group">
+               <input type="text" class="form-control" placeholder="What do you want to learn?" aria-label="Username"
+                  aria-describedby="basic-addon1">
+               <div class="input-group-prepend">
+                  <span class="fa fa-search" id=""></span>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- intro -->
+   <section class="myIntro">
+      <div class="myContainer intro__content">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="intro__item d-flex">
+                  <div class="icon">
+                     <i class="fa fa-bullseye"></i>
+                  </div>
+                  <div class="icon__content">
+                     <p>100,000 online courses</p>
+                     <p>Explore a variety of fresh topics</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="intro__item d-flex">
+                  <div class="icon">
+                     <i class="far fa-check-circle"></i>
+                  </div>
+                  <div class="icon__content">
+                     <p>Expert instruction</p>
+                     <p>Find the right instructor for you</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="intro__item d-flex">
+                  <div class="icon">
+                     <i class="fas fa-history"></i>
+                  </div>
+                  <div class="icon__content">
+                     <p>Lifetime access</p>
+                     <p>Learn on your schedule</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Courses -->
+   <section class="myCourses">
+      <div class="myContainer courese__content d-flex">
+         <div class="col-lg-3 col-xl-4 fix-padding">
+            <div class="courese__intro">
+               <h2>The world’s largest selection of courses</h2>
+               <p>Choose from over 100,000 online video courses with new additions published every month</p>
+            </div>
+         </div>
+         <div class="col-lg-9 col-xl-8 fix-padding">
+            <div class="myTab">
+               <!-- Nav tabs -->
+               <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                     <a class="nav-link active" data-toggle="tab" href="#business">Business</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-toggle="tab" href="#design">Design</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-toggle="tab" href="#photo">Photography</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-toggle="tab" href="#dev">Development</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-toggle="tab" href="#marketing">Marketing</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-toggle="tab" href="#it">IT & Software</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-toggle="tab" href="#personal">Personal Development</a>
+                  </li>
+               </ul>
+
+               <!-- Tab panes -->
+               <div class="tab-content">
+                  <div class="tab-pane container active" id="business">
+                     <div class="course__items owl-carousel owl-theme">
+                        <div class="card">
+                           <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                           <div class="card-body">
+                              <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                              <p class="card-text">Mohsen Hassan</p>
+                              <div class="rating">
+                                 <div class="rating__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                 </div>
+                                 <span>4.8</span>
+                                 <span>(43,028)</span>
+                              </div>
+                              <div class="price">
+                                 <span class="old__price">$179.99</span>
+                                 <span class="new__price">$79.99</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                           <div class="card-body">
+                              <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                              <p class="card-text">Mohsen Hassan</p>
+                              <div class="rating">
+                                 <div class="rating__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                    <span>4.8</span>
+                                    <span>(43,028)</span>
+                                 </div>
+                              </div>
+                              <div class="price">
+                                 <span class="old__price">$179.99</span>
+                                 <span class="new__price">$79.99</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                           <div class="card-body">
+                              <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                              <p class="card-text">Mohsen Hassan</p>
+                              <div class="rating">
+                                 <div class="rating__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                    <span>4.8</span>
+                                    <span>(43,028)</span>
+                                 </div>
+                              </div>
+                              <div class="price">
+                                 <span class="old__price">$179.99</span>
+                                 <span class="new__price">$79.99</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                           <div class="card-body">
+                              <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                              <p class="card-text">Mohsen Hassan</p>
+                              <div class="rating">
+                                 <div class="rating__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                    <span>4.8</span>
+                                    <span>(43,028)</span>
+                                 </div>
+                              </div>
+                              <div class="price">
+                                 <span class="old__price">$179.99</span>
+                                 <span class="new__price">$79.99</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                           <div class="card-body">
+                              <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                              <p class="card-text">Mohsen Hassan</p>
+                              <div class="rating">
+                                 <div class="rating__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                    <span>4.8</span>
+                                    <span>(43,028)</span>
+                                 </div>
+                              </div>
+                              <div class="price">
+                                 <span class="old__price">$179.99</span>
+                                 <span class="new__price">$79.99</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="tab-pane container fade" id="design">.2..</div>
+                  <div class="tab-pane container fade" id="photo">.3..</div>
+                  <div class="tab-pane container fade" id="dev">..4.</div>
+                  <div class="tab-pane container fade" id="marketing">..5.</div>
+                  <div class="tab-pane container fade" id="it">..6.</div>
+                  <div class="tab-pane container fade" id="personal">..7.</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Services -->
+   <section class="container-fluid services">
+      <div class="service_content d-flex">
+         <div class="col-md-4 d-flex services__item">
+            <div class="service__img">
+               <img
+                  src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/go_own_pace.svg"
+                  alt="">
+            </div>
+            <div class="text__content">
+               <h4>Go at your own pace</h4>
+               <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+            </div>
+
+         </div>
+         <div class="col-md-4 d-flex services__item">
+            <div class="service__img">
+               <img
+                  src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/learn_from_experts.svg"
+                  alt="">
+            </div>
+            <div class="text__content">
+               <h4>Go at your own pace</h4>
+               <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+            </div>
+
+         </div>
+         <div class="col-md-4 d-flex services__item">
+            <div class="service__img">
+               <img
+                  src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/video_courses.svg"
+                  alt="">
+            </div>
+            <div class="text__content">
+               <h4>Go at your own pace</h4>
+               <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- Students -->
+   <section class="myContainer students">
+      <div class="student__content">
+         <h3>Students are viewing</h3>
+         <div class="student__course owl-carousel owl-theme">
+            <div class="card">
+               <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+               <div class="card-body">
+                  <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                  <p class="card-text">Mohsen Hassan</p>
+                  <div class="rating">
+                     <div class="rating__star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span>4.8</span>
+                        <span>(43,028)</span>
+                     </div>
+                  </div>
+                  <div class="price">
+                     <span class="old__price">$179.99</span>
+                     <span class="new__price">$79.99</span>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+               <div class="card-body">
+                  <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                  <p class="card-text">Mohsen Hassan</p>
+                  <div class="rating">
+                     <div class="rating__star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span>4.8</span>
+                        <span>(43,028)</span>
+                     </div>
+                  </div>
+                  <div class="price">
+                     <span class="old__price">$179.99</span>
+                     <span class="new__price">$79.99</span>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+               <div class="card-body">
+                  <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                  <p class="card-text">Mohsen Hassan</p>
+                  <div class="rating">
+                     <div class="rating__star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span>4.8</span>
+                        <span>(43,028)</span>
+                     </div>
+                  </div>
+                  <div class="price">
+                     <span class="old__price">$179.99</span>
+                     <span class="new__price">$79.99</span>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+               <div class="card-body">
+                  <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                  <p class="card-text">Mohsen Hassan</p>
+                  <div class="rating">
+                     <div class="rating__star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span>4.8</span>
+                        <span>(43,028)</span>
+                     </div>
+                  </div>
+                  <div class="price">
+                     <span class="old__price">$179.99</span>
+                     <span class="new__price">$79.99</span>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+               <div class="card-body">
+                  <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                  <p class="card-text">Mohsen Hassan</p>
+                  <div class="rating">
+                     <div class="rating__star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span>4.8</span>
+                        <span>(43,028)</span>
+                     </div>
+                  </div>
+                  <div class="price">
+                     <span class="old__price">$179.99</span>
+                     <span class="new__price">$79.99</span>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+               <div class="card-body">
+                  <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                  <p class="card-text">Mohsen Hassan</p>
+                  <div class="rating">
+                     <div class="rating__star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span>4.8</span>
+                        <span>(43,028)</span>
+                     </div>
+                  </div>
+                  <div class="price">
+                     <span class="old__price">$179.99</span>
+                     <span class="new__price">$79.99</span>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+               <div class="card-body">
+                  <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                  <p class="card-text">Mohsen Hassan</p>
+                  <div class="rating">
+                     <div class="rating__star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span>4.8</span>
+                        <span>(43,028)</span>
+                     </div>
+                  </div>
+                  <div class="price">
+                     <span class="old__price">$179.99</span>
+                     <span class="new__price">$79.99</span>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+               <div class="card-body">
+                  <h4 class="card-title">The Complete Foundation Stock Trading Course</h4>
+                  <p class="card-text">Mohsen Hassan</p>
+                  <div class="rating">
+                     <div class="rating__star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span>4.8</span>
+                        <span>(43,028)</span>
+                     </div>
+                  </div>
+                  <div class="price">
+                     <span class="old__price">$179.99</span>
+                     <span class="new__price">$79.99</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Banner -->
+   <section class="container-fluid banner">
+      <div class="banner__borderTop"></div>
+      <div class="banner__content">
+         <div class="row">
+            <div class="col"><i class="fa fa-place-of-worship"></i></div>
+            <div class="col"><i class="fa fa-plane-arrival"></i></div>
+            <div class="col"><i class="fa fa-basketball-ball"></i></div>
+            <div class="col"><i class="fab fa-pagelines"></i></div>
+            <div class="col"><i class="fa fa-globe-asia"></i></div>
+         </div>
+         <div class="row banner__between">
+            <div class="col banner__between__item1"><i class="fa fa-balance-scale"></i></div>
+            <div class="col">
+               <div class="text__content">
+                  <h4>Get personalized recommendations</h4>
+                  <p>Answer a few questions for your top picks</p>
+                  <button class="btn ude-btnRed">Get started</button>
+               </div>
+            </div>
+            <div class="col banner__between__item1"><i class="fab fa-blogger-b"></i></div>
+         </div>
+         <div class="row">
+            <div class="col"><i class="fa fa-address-card"></i></div>
+            <div class="col"><i class="fab fa-app-store-ios"></i></div>
+            <div class="col"><i class="fa fa-list-alt"></i></div>
+            <div class="col"><i class="fa fa-ambulance"></i></div>
+            <div class="col"><i class="fa fa-archway"></i></i></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- topCategories -->
+   <section class="myContainer topCategories">
+      <h4>Top categories</h4>
+      <div class="row">
+         <div class="col-md-6 col-lg-4 col-xl-3 item">
+            <div class="item__content">
+               <i class="fas fa-laptop-code"></i>
+               <p>Development</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-4 col-xl-3 item">
+            <div class="item__content">
+               <i class="far fa-chart-bar"></i>
+               <p>Business</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-4 col-xl-3 item">
+            <div class="item__content">
+               <i class="fa fa-desktop"></i>
+               <p>IT & Software</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-4 col-xl-3 item">
+            <div class="item__content">
+               <i class="fas fa-pencil-ruler"></i>
+               <p>Design</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-4 col-xl-3 item">
+            <div class="item__content">
+               <i class="fas fa-bullseye"></i>
+               <p>Marketing</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-4 col-xl-3 item">
+            <div class="item__content">
+               <i class="fas fa-book-open"></i>
+               <p>Personal Development</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-4 col-xl-3 item">
+            <div class="item__content">
+               <i class="fa fa-camera"></i>
+               <p>Photography</p>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-4 col-xl-3 item">
+            <div class="item__content">
+               <i class="fa fa-music"></i>
+               <p>Music</p>
+            </div>
+         </div>
+
+
+      </div>
+   </section>
+
+   <!-- component -->
+   <section class="container-fluid component">
+      <!-- comments -->
+      <div class="myContainer comment">
+         <h4>What our students have to say</h4>
+         <div class="row d-flex mt-3">
+            <div class="col-md-6 col-lg-4 comment__content">
+               <div class="comment__content__item">
+                  <div class="comment__item">
+                     <img class="avatar__mini" src="./img/h1.jpg" alt="">
+                     <p>Borivoje</p>
+                  </div>
+                  <p class="comment__item__p">Udemy is a life saver. I don't have the time or money for a college
+                     education. My goal is to become a
+                     freelance web developer, and thanks to Udemy, I'm really close.</p>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-4 comment__content">
+               <div class="comment__content__item">
+                  <div class="comment__item">
+                     <img class="avatar__mini" src="./img/h2.jpg" alt="">
+                     <p>Dipesh</p>
+                  </div>
+                  <p class="comment__item__p">I believe in lifelong learning and Udemy is a great place to learn from
+                     experts. I've learned a lot and recommend it to all my friends.</p>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-4 comment__content">
+               <div class="comment__content__item">
+                  <div class="comment__item">
+                     <div class="avatar__mini avatar__mini__1">
+                        <p>K</p>
+                     </div>
+                     <p>Kathy</p>
+                  </div>
+                  <p class="comment__item__p">My children and I LOVE Udemy! The courses are fantastic and the
+                     instructors
+                     are so fun and knowledgeable. I only wish we found it sooner.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- companies -->
+      <div class="myContainer companies">
+         <div class="companies__content">
+            <p class="companies__heading">Trusted by companies of all sizes</p>
+            <div class="d-flex">
+               <div class="col-2 companies__item">
+                  <img src="./img/booking.svg" alt="">
+               </div>
+               <div class="col-2 companies__item">
+                  <img src="./img/volkswagen.svg" alt="">
+               </div>
+               <div class="col-2 companies__item">
+                  <img src="./img/mercedes.svg" alt="">
+               </div>
+               <div class="col-2 companies__item">
+                  <img src="./img/pinterest.svg" alt="">
+               </div>
+               <div class="col-2 companies__item">
+                  <img src="./img/adidas.svg" alt="">
+               </div>
+               <div class="col-2 companies__item">
+                  <img src="./img/booking.svg" alt="">
+               </div>
+            </div>
+         </div>
+
+         <div class="companies__content">
+            <div class="d-flex">
+               <div class="col-6 companies__item item__border">
+                  <div class="item__heading">
+                     <h5><a href="#">Become an instructor</a></h5>
+                  </div>
+                  <div class="item__content">
+                     <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools
+                        and skills to teach what you love.</p>
+                  </div>
+                  <div class="item__link">
+                     <button class="btn ude-btnRed">Start teaching today</button>
+                  </div>
+               </div>
+               <div class="col-6 companies__item">
+                  <div class="item__heading">
+                     <h5><a href="#">Udemy for Business</a></h5>
+                  </div>
+                  <div class="item__content">
+                     <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools
+                        and skills to teach what you love.</p>
+                  </div>
+                  <div class="item__link">
+                     <button class="btn ude-btnRed">Get Udemy for Business</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+   <!-- footer -->
+   <footer>
+      <div class="myContainer">
+         <div class="top__footer__content">
+            <div class="row">
+               <div class="col-3 d-flex flex-column">
+                  <a class="text-bold" href="#">Udemy for Business</a>
+                  <a class="text-bold" href="#">Teach on Udemy</a>
+                  <a href="#">Udemy app</a>
+                  <a href="#">About us</a>
+               </div>
+               <div class="col-3 d-flex flex-column">
+                  <a href="#">Contact us</a>
+                  <a href="#">Careers</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Help and Support</a>
+               </div>
+               <div class="col-3 d-flex flex-column">
+                  <a href="#">Affiliate</a>
+                  <a href="#">Sitemap</a>
+                  <a href="#">Featured courses</a>
+               </div>
+               <div class="col-3 d-flex flex-column">
+
+                  <div class="btn-group dropup">
+                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span><i class="fa fa-globe-africa mr-2"></i></span>English
+                     </button>
+                     <div class="dropdown-menu">
+                        <div class="dropdown__menu__center"><span value=""><a href="#">Vietnamese</a></span></div>
+                        <div class="dropdown__menu__center"><span value=""><a href="#">English</a></span></div>
+                        <div class="dropdown__menu__center"><span value=""><a href="#">Japanese</a></span></div>
+                        <div class="dropdown__menu__center"><span value=""><a href="#">China</a></span></div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Sử dụng chung file footer.scss -->
+   <section class="bottom__footer">
+      <div class="myContainer">
+         <div class="row">
+            <div class="d-flex bottom__footer__1">
+               <img src="./img/logo-coral.svg" alt="">
+               <p>Copyright © 2020 Udemy, Inc.</p>
+            </div>
+            <div class="d-flex bottom__footer__2">
+               <p><a href="#">Terms</a></p>
+               <p><a href="#">Privacy Policy and Cookie Policy</a></p>
+            </div>
+         </div>
+      </div>
+      <div class="hr-primary">
+   </section>
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <!-- Owl-carosel -->
+   <script src="./js/owl.carousel.min.js"></script>
+
+   <!-- Carousel-students -->
+   <script>
+      $('.student__course').owlCarousel({
+         loop: false,
+         margin: 10,
+         nav: true,
+         dots: false,
+         responsive: {
+            0: {
+               items: 1
+            },
+            600: {
+               items: 3
+            },
+            1000: {
+               items: 4
+            },
+            1440: {
+               items: 6
+            },
+         }
+      })
+   </script>
+
+   <!-- Carousel-Courses -->
+   <script>
+      $('.owl-carousel').owlCarousel({
+         loop: false,
+         margin: 10,
+         nav: true,
+         dots: false,
+         responsive: {
+            0: {
+               items: 1
+            },
+            600: {
+               items: 3
+            },
+            // 1000: {
+            //    items: 3
+            // },
+            1440: {
+               items: 4
+            },
+         }
+      })
+   </script>
+
+   <script>
+      $(window).scroll(function () {
+         if ($(window).scrollTop() > 500) {
+            $('.myNavBar').addClass('headerClass');
+         } else {
+            $('.myNavBar').removeClass('headerClass');
+         }
+      })
+   </script>
+   
+</body>
+
+</html>

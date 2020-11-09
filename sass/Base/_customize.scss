@@ -1,0 +1,10 @@
+.myContainer{
+    width: 70%;
+    margin: auto;
+}
+h4{
+    @include styleText($color-black-0, $fs-3, $fw-bold);
+}
+h5{
+    @include styleText($color-black-light, $fs-2, $fw-bold);
+}

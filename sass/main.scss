@@ -1,0 +1,33 @@
+// Chỉ chứa đường dẫn tới các file con
+
+// Helper 
+@import './Helper/variables';
+@import './Helper/mixin';
+
+//Vender
+// Chỉ import file scss
+
+//Base
+@import './Base/reset';
+@import './Base/customize';
+@import './Base/normalized';
+@import './Base/reposive';
+
+//Components
+@import './Components/button';
+
+//Layouts
+@import './Layouts/header';
+@import './Layouts/cover';
+@import './Layouts/intro';
+@import './Layouts/coureses';
+@import './Layouts/services';
+@import './Layouts/students';
+@import './Layouts/banner';
+@import './Layouts/topCategories';
+@import './Layouts/_component';
+@import './Layouts/footer';
+
+//Pages
+
+//Theme

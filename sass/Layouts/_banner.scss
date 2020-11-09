@@ -1,0 +1,26 @@
+.banner{
+    margin-top: $mg-2;
+    background-color: $color-black-0;
+    color: $color-white-0;
+    padding: $pd-3 0;
+    .banner__content{
+        margin: auto;
+        text-align: center;
+        i{
+           font-size: $fs-4 - 8;
+        }
+        .text__content{
+            margin: $pd-3;
+            h4{
+                margin-bottom: $mg-1;
+            }
+        }
+        .banner__between{
+            height: 170px;
+            .banner__between__item1{
+                line-height: 170px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,93 @@
+.myCourses {
+    margin: $mg-2 0;
+    .courese__content {
+        // width: 70%;
+        // margin: auto;
+        // height: 300px;
+        .fix-padding {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .courese__intro {
+            background-color: $color-gray-5;
+            height: 98%;
+            padding-top: 150px;
+            padding-left: 35px;
+            h2 {
+                @include styleText($color-black-0, $fs-0 + 4, $fw-bold);
+            }
+        }
+        .myTab {
+            height: 100%;
+            .nav {
+                margin-left: $mg-1 + 6;
+                flex-wrap: nowrap;
+                // justify-content: space-between;
+                // border-bottom: none;
+                .nav-item {
+                    &:hover {
+                        .nav-link {
+                            border: none;
+                        }
+                    }
+                    .nav-link.active {
+                        border: none;
+                        border-bottom: 5px solid $color-blue;
+                    }
+                    .nav-link {
+                        @include styleText($color-black-0, $fs-0, $fw-normal);
+                        border: none;
+                    }
+                }
+            }
+            .tab-content {
+                margin-top: $mg-2;
+                position: relative;
+                .card-body {
+                    height: 250px;
+                }
+                .card-title {
+                    @include styleText($color-black-0, $fs-0, $fw-normal);
+                }
+                .card-text {
+                    @include styleText($color-gray-4, $fs-1, $fw-normal);
+                }
+                .rating {
+                    display: flex;
+                    .rating__star {
+                        @include styleText($color-yellow, $fs-1, $fw-normal);
+                        margin-right: $mg-0;
+                    }
+                    span:nth-child(2) {
+                        @include styleText($color-gray-4, $fs-1, $fw-bold);
+                        margin-right: $mg-1 - 5;
+                    }
+                    span:last-child {
+                        @include styleText($color-gray-4, $fs-1, $fw-normal);
+                    }
+                }
+                .price {
+                    text-align: right;
+                    .old__price {
+                        @include styleText($color-gray-4, $fs-1, $fw-normal);
+                        text-decoration: line-through;
+                        margin-right: $mg-1;
+                    }
+                    .new__price {
+                        @include styleText($color-black-0, $fs-2, $fw-bold);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Reponsive
+.myCourses {
+    //Phạm vi nhỏ hơn 1200px
+    @include responsive("large") {
+        .courese__intro {
+            display: none;
+        }
+    }
+}

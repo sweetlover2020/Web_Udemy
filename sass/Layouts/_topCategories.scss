@@ -1,0 +1,27 @@
+.topCategories{
+    margin-top: $mg-2;
+    .item{
+       padding: 0 $pd-2 $pd-1 0;
+    }
+    .item__content{
+        display: flex;
+        border: 1px solid $color-gray-6;
+        box-shadow: 0 2px 3px 0 $color-gray-6;
+        align-items: center;
+        padding-left: $pd-1 + 5;
+        transition: all 0.2s;
+        height: 100%;
+        i{
+            margin-right: $mg-1;
+            font-size: $fs-4 - 8;
+        }
+        p{
+            line-height: 2;
+            margin-top: $mg-1 + 5;
+        }
+        &:hover{
+            box-shadow: 1px 1px 3px 2px $color-gray-6;
+            // cursor: pointer;
+        }
+    }
+}

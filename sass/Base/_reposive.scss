@@ -1,0 +1,39 @@
+//Header
+.header__right {
+    //Phạm vi nhỏ hơn 1200px
+    @include responsive("extra-large") {
+        .business,
+        .teach {
+            display: none;
+        }
+    }
+}
+
+.header__left {
+    //Phạm vi nhỏ hơn 768px
+    @include responsive("medium") {
+        .header__form,
+        .header__categories {
+            display: none;
+        }
+    }
+    justify-content: center;
+}
+.header__right {
+    //Phạm vi nhỏ hơn 768px
+    @include responsive("medium") {
+        .ude-btnGroup {
+            display: none;
+            // visibility: hidden;
+        }
+    }
+}
+.myIntro {
+    //Phạm vi nhỏ hơn 768px
+    @include responsive("medium") {
+        .intro__content {
+            display: none;
+            // visibility: hidden;
+        }
+    }
+}
